@@ -54,3 +54,46 @@ The system is designed for easy deployment and extension, making it suitable for
 
 ## Architecture
 
+
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+
+### 2. Backend Setup (Node.js/Express)
+
+- The backend will run on `http://localhost:5000` by default.
+
+### 3. Frontend Setup (React.js)
+
+
+- In `LeadForm.js`, update the fetch URL to point to your backend (local or deployed).
+- Start the frontend:
+- The frontend will run on `http://localhost:5173` by default.
+
+### 4. n8n Workflow Setup
+
+- Sign up at [n8n.io](https://n8n.io/) or run locally.
+- Create a new workflow with:
+- **Webhook Node:** POST `/webhook/lead`
+- **Email Node:** Configure with SendGrid, Mailgun, or SMTP.
+
+### 5. Environment Variables
+
+- **Backend:**  
+- `N8N_WEBHOOK_URL` – Your n8n webhook endpoint.
+- **Frontend:**  
+- `REACT_APP_API_URL` – Your backend API endpoint.
+
+---
+
+## Deployment
+
+- **Frontend:** Deploy to [Netlify](https://www.netlify.com/).
+- **n8n:** Use [n8n Cloud](https://n8n.io/) or self-host.
+
+Update all URLs in your code/configuration after deployment.
+
+---
