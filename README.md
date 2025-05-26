@@ -66,7 +66,7 @@ The system is designed for easy deployment and extension, making it suitable for
 ### 2. Frontend Setup (React.js)
 
 
-- In `LeadForm.js`, update the fetch URL to point to your backend (local or deployed).
+- In `E:\AI-Error-technolgy project\frontend\src\components`, update the fetch URL to point to your backend (local or deployed).
 - Start the frontend:
 - The frontend will run on `http://localhost:5173` by default.
 
